@@ -1,0 +1,171 @@
+.bg-hp {
+  background-image: url(../img/centre-esthetique-estuaire.png);
+}
+
+.bg-acide-hyaluronique {
+  background-image: url(../img/operations/lg/acide-hyaluronique-lg.jpg);
+}
+
+.bg-cryolipolyse {
+  background-image: url(../img/operations/lg/cryolipolyse-lg.jpg);
+}
+
+.bg-toxine-botulique {
+  background-image: url(../img/operations/lg/toxine-botulique-lg.jpg);
+}
+
+.bg-chirurgie-dermatologique {
+  background-image: url(../img/operations/lg/chirurgie-dermatologique-lg.jpg);
+}
+
+.bg-augmentation-mammaire-par-lipomodelage {
+  background-image: url(../img/operations/lg/augmentation-mammaire-par-lipomodelage-lg.jpg);
+}
+
+.bg-augmentation-mammaire-par-protheses {
+  background-image: url(../img/operations/lg/augmentation-mammaire-par-protheses-lg.jpg);
+}
+
+.bg-lifting-mammaire {
+  background-image: url(../img/operations/lg/lifting-mammaire-lg.jpg);
+}
+
+.bg-reconstruction-mammaire {
+  background-image: url(../img/operations/lg/reconstruction-mammaire-lg.jpg);
+}
+
+.bg-reduction-mammaire {
+  background-image: url(../img/operations/lg/reduction-mammaire-lg.jpg);
+}
+
+.bg-abdominoplastie {
+  background-image: url(../img/operations/lg/abdominoplastie-lg.jpg);
+}
+
+.bg-bodylift {
+  background-image: url(../img/operations/lg/bodylift-lg.jpg);
+}
+
+.bg-lifting-des-bras {
+  background-image: url(../img/operations/lg/lifting-des-bras-lg.jpg);
+}
+
+.bg-lifting-des-cuisses {
+  background-image: url(../img/operations/lg/lifting-des-cuisses-lg.jpg);
+}
+
+.bg-liposuccion {
+  background-image: url(../img/operations/lg/liposuccion-lg.jpg);
+}
+
+.bg-blepharoplastie {
+  background-image: url(../img/operations/lg/blepharoplastie-lg.jpg);
+}
+
+.bg-lifting-du-visage {
+  background-image: url(../img/operations/lg/lifting-du-visage-lg.jpg);
+}
+
+.bg-otoplastie {
+  background-image: url(../img/operations/lg/otoplastie-lg.jpg);
+}
+
+.bg-rhinoplastie {
+  background-image: url(../img/operations/lg/rhinoplastie-lg.jpg);
+}
+
+.bg-head {
+  background-position: 50% 0, 0 0;
+  background-size: cover, auto;
+  background-attachment: scroll, scroll;
+  padding-top: 500px;
+  padding-bottom: 100px;
+}
+
+.bg-page {
+  -webkit-text-fill-color: inherit;
+  background-attachment: scroll, scroll;
+  background-clip: padding-box;
+  background-image: linear-gradient(to top, #213251, transparent);
+  background-position: 50% 0, 0 0;
+  background-repeat: no-repeat;
+  background-size: cover, auto;
+  padding-bottom: 0;
+  padding-top: 500px;
+}
+
+.bg-photo {
+  background-position: 50% 50%, 0 0;
+  background-size: cover;
+}
+
+*,
+.ft-od-200 {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  color: #213251;
+}
+
+.ft-od-700 {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover .card,
+a:hover .card .btn-info {
+  background-color: #435678;
+}
+
+a:hover .card .card-title,
+a:hover .card .card-text,
+a:hover .card .card-text strong,
+a:hover .card .btn-info {
+  color: #FFF;
+}
+
+.maj {
+  text-transform: uppercase;
+}
+
+.ft-wh {
+  color: white;
+}
+
+.clr-cee {
+  color: #213251;
+}
+
+.bg-clr-cee {
+  background-color: #213251;
+}
+
+h2.accordion-header .accordion-button {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+section.cee {
+  padding-bottom: 6rem;
+  margin-bottom: 7rem;
+  border-bottom: 1px solid #EEE;
+}
+
+.section-title {
+  color: #333333;
+}
+
+.content {
+  font-size: 1.2rem;
+}
+
+.sm-logo {
+  max-width: 40%;
+}
