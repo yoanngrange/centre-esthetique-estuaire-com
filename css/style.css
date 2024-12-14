@@ -133,9 +133,11 @@
   }
 }
 
-.divider {margin-top: 3rem; margin-bottom: 3rem;}
-*,
-.ft-od-200 {
+.divider {
+  margin-top: 3rem; margin-bottom: 3rem;
+}
+
+*, .ft-od-200 {
   font-family: "Oswald", sans-serif;
   font-optical-sizing: auto;
   font-weight: 200;
@@ -185,6 +187,14 @@ a:hover .card .btn-info {
 h2.accordion-header .accordion-button {
   font-size: 1.5rem;
   font-weight: 400;
+}
+
+.accordion .card .card-body h4 {
+  font-size: 1.2rem;
+}
+
+.cee .card .card-body h4 {
+  font-size: 1.2rem;
 }
 
 section.cee {
