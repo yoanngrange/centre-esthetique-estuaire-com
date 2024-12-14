@@ -11,6 +11,19 @@
 		<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
 		<link href="../css/bootstrap.min.css" rel="stylesheet">
 		<link href="../css/style.css" rel="stylesheet">
+		<script>
+			// Function to shuffle the order of elements within a container
+			function shuffleElements(container) {
+			  var elements = container.children;
+			  for (var i = elements.length; i >= 0; i--) {
+				container.appendChild(elements[Math.random() * i | 0]);
+			  }
+			}
+			window.addEventListener('load', function() {
+			  var container = document.getElementById('myShuffle');
+			  shuffleElements(container);
+			});
+		  </script>
 	</head>
 	<body>
 		<header>
@@ -59,11 +72,12 @@
 						<p>L'hospitalisation dure 24h avec une sortie le lendemain de l'intervention et une période de repos d'au moins 3 semaines.</p>
 					</div>
 					<div class="col-lg-4">
-						<div class="row">
-							<h6>Réalisable par :</h6>
+						<h6>Réalisable par :</h6>
+						<div class="row" id="myShuffle">
 							<div class="col-12">
 								<a href="https://www.doctolib.fr/chirurgien-plastique/saint-nazaire/ludovic-bourdais">
-									<div class="card border-light mb-3">
+									<div class="card card-left-img border-light mb-3">
+										<img src="../img/equipe-medicale/ludovic-bourdais-250w.png" class="rounded" alt="Ludovic Bourdais">
 										<div class="card-body">
 											<h5 class="card-title">Dr. Ludovic Bourdais</h5>
 											<p class="card-text">Chirurgien plasticien et esthétique</p>
@@ -74,7 +88,8 @@
 							</div>
 							<div class="col-12">
 								<a href="https://www.doctolib.fr/chirurgien-plastique/saint-nazaire/vincent-lescour">
-									<div class="card border-light mb-3">
+									<div class="card card-left-img border-light mb-3">
+										<img src="../img/equipe-medicale/vincent-lescour-250w.png" class="rounded" alt="Vincent Lescour">
 										<div class="card-body">
 											<h5 class="card-title">Dr. Vincent Lescour</h5>
 											<p class="card-text">Chirurgien plasticien et esthétique</p>

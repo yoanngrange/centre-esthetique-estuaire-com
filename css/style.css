@@ -114,6 +114,25 @@
   background-size: cover;
 }
 
+.card-left-img {
+  flex-direction: row;
+  align-items: center;
+}
+.card-left-img img {
+  width: 30%;
+  margin: 1rem 0 1rem 1rem;
+}
+@media only screen and (max-width: 768px) {
+  .card-left-img img {
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .card-left-img img {
+    width: 40%;
+  }
+}
+
 *,
 .ft-od-200 {
   font-family: "Oswald", sans-serif;
