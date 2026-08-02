@@ -1,0 +1,35 @@
+# Centre Esthétique de l'Estuaire
+
+> Cosmetic and plastic surgery practice in Saint-Nazaire (near La Baule), France, run by two plastic surgeons, Dr Ludovic Bourdais and Dr Vincent Lescour. The site presents the practice's surgical and aesthetic-medicine procedures, the medical team, and practical information for prospective patients. Content is in French.
+
+## Body (Silhouette)
+- [Abdominoplastie](https://centre-esthetique-estuaire.com/chirurgie-esthetique/abdominoplastie.html): Tummy tuck surgery
+- [Bodylift](https://centre-esthetique-estuaire.com/chirurgie-esthetique/bodylift.html): Circumferential lower body lift
+- [Lifting des bras](https://centre-esthetique-estuaire.com/chirurgie-esthetique/lifting-des-bras.html): Arm lift surgery
+- [Lifting des cuisses](https://centre-esthetique-estuaire.com/chirurgie-esthetique/lifting-des-cuisses.html): Thigh lift surgery
+- [Liposuccion](https://centre-esthetique-estuaire.com/chirurgie-esthetique/liposuccion.html): Liposuction / body contouring
+
+## Face (Visage)
+- [Blépharoplastie](https://centre-esthetique-estuaire.com/chirurgie-esthetique/blepharoplastie.html): Eyelid surgery
+- [Lifting du visage](https://centre-esthetique-estuaire.com/chirurgie-esthetique/lifting-du-visage.html): Facelift
+- [Otoplastie](https://centre-esthetique-estuaire.com/chirurgie-esthetique/otoplastie.html): Ear pinning / correction of protruding ears
+- [Rhinoplastie](https://centre-esthetique-estuaire.com/chirurgie-esthetique/rhinoplastie.html): Nose surgery
+
+## Breast (Seins)
+- [Augmentation mammaire par prothèses](https://centre-esthetique-estuaire.com/chirurgie-esthetique/augmentation-mammaire-par-protheses.html): Breast augmentation with implants
+- [Augmentation mammaire par lipomodelage](https://centre-esthetique-estuaire.com/chirurgie-esthetique/augmentation-mammaire-par-lipomodelage.html): Breast augmentation by fat transfer (no implants)
+- [Lifting mammaire](https://centre-esthetique-estuaire.com/chirurgie-esthetique/lifting-mammaire.html): Breast lift for sagging breasts
+- [Reconstruction mammaire](https://centre-esthetique-estuaire.com/chirurgie-esthetique/reconstruction-mammaire.html): Breast reconstruction
+- [Réduction mammaire](https://centre-esthetique-estuaire.com/chirurgie-esthetique/reduction-mammaire.html): Breast reduction for hypertrophy
+
+## Dermatological surgery
+- [Chirurgie dermatologique](https://centre-esthetique-estuaire.com/chirurgie-esthetique/chirurgie-dermatologique.html): Surgery for skin lesions
+
+## Aesthetic medicine (non-surgical)
+- [Acide hyaluronique](https://centre-esthetique-estuaire.com/chirurgie-esthetique/acide-hyaluronique.html): Hyaluronic acid fillers for wrinkles and skin radiance
+- [Cryolipolyse](https://centre-esthetique-estuaire.com/chirurgie-esthetique/cryolipolyse.html): Fat reduction by cold treatment
+- [Toxine botulique](https://centre-esthetique-estuaire.com/chirurgie-esthetique/toxine-botulique.html): Botulinum toxin injections
+
+## Practice information
+- [Accueil](https://centre-esthetique-estuaire.com/index.html): Homepage — overview of procedures, medical team, and practice location (Bâtiment CAP Santé, 10 rue des Troènes, 44600 Saint-Nazaire)
+- [Informations légales](https://centre-esthetique-estuaire.com/informations-legales.html): Legal notice
