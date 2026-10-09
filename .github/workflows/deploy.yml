@@ -1,0 +1,45 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      # Le token Airtable (lecture seule, scope data.records:read, restreint
+      # à cette base) n'est jamais commité en clair : v2/cee.js contient le
+      # placeholder __AIRTABLE_PAT__, remplacé ici par le secret de dépôt
+      # juste avant publication. Le token reste visible côté client sur le
+      # site publié — c'est voulu, voir v2/README.md.
+      - name: Inject Airtable token
+        run: sed -i "s|__AIRTABLE_PAT__|${{ secrets.AIRTABLE_PAT }}|" v2/cee.js
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

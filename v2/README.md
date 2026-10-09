@@ -2,24 +2,31 @@
 
 Refonte du site, pilotée par Airtable : tout le contenu (actes, équipe, blog,
 mentions légales, photo d'accueil) est lu en direct depuis Airtable au
-chargement de chaque page, sans étape de build. Même pattern que `/pain` et
-caracteres-ameriques (token Airtable public en lecture seule, embarqué dans
-`cee.js`).
+chargement de chaque page. Même principe que `/pain` et caracteres-ameriques
+(token Airtable public en lecture seule, lu depuis `cee.js`) — mais ici le
+dépôt est public sur GitHub et sa protection anti-fuite de secrets refuse
+tout commit contenant un vrai token. Le token n'est donc **jamais commité en
+clair** : `cee.js` contient le placeholder `__AIRTABLE_PAT__`, et un workflow
+GitHub Actions l'injecte au moment du déploiement sur GitHub Pages, à partir
+du secret de dépôt `AIRTABLE_PAT`. Le token reste visible dans le code source
+de la page publiée (normal et voulu : lecture seule, scope `data.records:read`,
+restreint à cette seule base) — simplement plus dans l'historique git.
 
-## ⚠️ Avant de publier : créer le token Airtable
+## Déploiement
 
-`cee.js` contient un `AT.key` à remplacer :
+Géré par `.github/workflows/deploy.yml` : à chaque push sur `main`, le
+workflow remplace `__AIRTABLE_PAT__` par le secret `AIRTABLE_PAT` dans une
+copie de `v2/cee.js`, puis publie tout le dépôt sur GitHub Pages. Pages doit
+être configuré en source "GitHub Actions" (Settings → Pages → Build and
+deployment), pas en déploiement classique depuis une branche.
 
-1. Aller sur https://airtable.com/create/tokens
-2. Créer un token avec le scope **`data.records:read`** uniquement
-3. L'accès doit être restreint à la seule base **"Centre Esthétique de
-   l'Estuaire"** (`appoIhVnpmCvSxyEr`) — pas d'accès en écriture, pas d'accès
-   aux autres bases
-4. Copier le token dans `cee.js`, constante `AT.key`
+## Token Airtable
 
-C'est un token en lecture seule exposé côté client (comme sur `/pain`) : il
-ne peut lire que des données déjà destinées à être publiques sur le site,
-jamais écrire. Aucun autre secret à gérer.
+Secret de dépôt `AIRTABLE_PAT`, géré dans Settings → Secrets and variables →
+Actions. PAT Airtable en lecture seule (scope `data.records:read`), restreint
+à la base `appoIhVnpmCvSxyEr`. Pour le régénérer : créer un nouveau token sur
+https://airtable.com/create/tokens avec le même scope et le même accès
+restreint, puis mettre à jour le secret `AIRTABLE_PAT`.
 
 ## Architecture
 

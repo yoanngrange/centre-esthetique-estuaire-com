@@ -4,10 +4,11 @@
 // restreint à cette seule base.
 const CEE = (() => {
   const AT = {
-    // TODO (Yoann) : remplacer par un vrai PAT Airtable en lecture seule,
-    // scope data.records:read, restreint à la base appoIhVnpmCvSxyEr.
-    // Créer sur https://airtable.com/create/tokens — voir README.md du dossier.
-    key: 'REPLACE_WITH_READONLY_AIRTABLE_PAT',
+    // PAT Airtable en lecture seule (scope data.records:read), restreint à
+    // cette seule base. Injecté au déploiement par le workflow GitHub
+    // Actions (voir .github/workflows/deploy.yml) à partir du secret de
+    // dépôt AIRTABLE_PAT — jamais commité en clair. Voir README.md.
+    key: '__AIRTABLE_PAT__',
     base: 'appoIhVnpmCvSxyEr',
     tables: {
       accueil: 'tbl4Kl5W7NB3Bc9Kw',
